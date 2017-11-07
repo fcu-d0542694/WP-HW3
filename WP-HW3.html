@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>An Addition Program</title>
+		<script type="text/javascript">
+		
+			var F;
+			var C;
+			var type;
+			var number2;
+			var sum;
+			
+			
+			type=window.prompt("攝氏轉華氏請輸入1\n華氏轉攝氏請輸入0");
+			
+				if(type==1){
+					C=window.prompt("請輸入攝氏溫度");
+					F=CtoF(C);
+					document.writeln("If C="+C+" , F="+F);
+				}
+				else if(type==0){
+					F=window.prompt("請輸入華氏溫度");
+					C=FtoC(F);
+					document.writeln("If F="+F+" , C="+C);
+				}
+		
+			function CtoF(C){
+				return C*(9/5)+32;
+			}
+
+			function FtoC(F){
+				return (F-32)*(9/5);
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
